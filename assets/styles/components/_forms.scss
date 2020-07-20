@@ -1,0 +1,13 @@
+.message {
+  @extend %message-shared;
+}
+
+.error {
+  @extend %message-shared;
+  border-color: red;
+}
+
+.warning {
+  @extend %message-shared;
+  border-color: yellow;
+}

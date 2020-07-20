@@ -1,0 +1,21 @@
+// -- branding color -------------------
+	$theme-colors: (
+		"primary": #fd5a75
+	);
+
+
+// -- fonts ----------------
+	$sourcesanspro		: 'Source Sans Pro', sans-serif;
+	$MontserratA		: 'Montserrat Alternates', sans-serif;
+
+// -- links ----------------------------
+
+	$link-color			: #0074d9;
+	$link-color-hover	: darken($link-color, 10);
+	$link-color-visited	: $link-color-hover;
+	$link-color-focus	: darken($link-color-hover, 10);
+
+
+$container-max-widths: (
+	xl: 1020px
+);

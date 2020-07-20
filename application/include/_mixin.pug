@@ -1,0 +1,112 @@
+mixin carousel()
+	#carouselExampleIndicators.carousel.slide(data-ride='carousel')
+		ol.carousel-indicators
+			li.active(data-target='#carouselExampleIndicators', data-slide-to='0')
+			li(data-target='#carouselExampleIndicators', data-slide-to='1')
+			li(data-target='#carouselExampleIndicators', data-slide-to='2')
+		.carousel-inner
+			.carousel-item.active
+				img.d-block.w-100(src='dist/images/slide-one-mini.png', alt='First slide')
+				.carousel-caption.d-none.d-md-block
+					h5 First slide label
+					p Nulla vitae elit libero, a pharetra augue mollis interdum.
+			.carousel-item
+				img.d-block.w-100(src='dist/images/slide-two-mini.png', alt='Second slide')
+				.carousel-caption.d-none.d-md-block
+					h5 Second slide label
+					p Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+			.carousel-item
+				img.d-block.w-100(src='dist/images/slide-tree-mini.png', alt='Third slide')
+				.carousel-caption.d-none.d-md-block
+					h5 Third slide label
+					p Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+		a.carousel-control-prev(href='#carouselExampleIndicators', role='button', data-slide='prev')
+			span.carousel-control-prev-icon(aria-hidden='true')
+			span.sr-only Previous
+		a.carousel-control-next(href='#carouselExampleIndicators', role='button', data-slide='next')
+			span.carousel-control-next-icon(aria-hidden='true')
+			span.sr-only Next
+
+mixin navigantion()
+	nav.navbar.navbar-expand-md.navbar-light.fixed-top#mainNav
+		.container
+			a.navbar-brand.p-0(href='#')
+				img.img-fluid(src="dist/images/newlogo.png", alt="Logo-inovativo")
+			button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarsExampleDefault', aria-controls='navbarsExampleDefault', aria-expanded='false', aria-label='Toggle navigation')
+				span.navbar-toggler-icon
+			#navbarsExampleDefault.collapse.navbar-collapse
+				ul.navbar-nav.ml-auto
+					li.nav-item.active
+						a.nav-link(href='#home')
+							| Home 
+							span.sr-only (current)
+					li.nav-item
+						a.nav-link(href='#services') Services
+					li.nav-item
+						a.nav-link(href='#portfolio') Portfolio
+					li.nav-item
+						a.nav-link(href='#team-inovativ') Team
+					li.nav-item
+						a.nav-link(href='#partner') Clients
+					li.nav-item
+						a.nav-link(href='http://dev.inovativo.id/html_inovativo/blog.html') Blog
+
+mixin btn-social-outline()
+	ul.list-inline.mb-0
+		li.list-inline-item
+			a.btn.btn-outline-light.btn-social.rounded-circle(href="#")
+				i.fa.fw.fa-facebook
+		li.list-inline-item
+			a.btn.btn-outline-light.btn-social.rounded-circle(href="#")
+				i.fa.fw.fa-twitter
+		li.list-inline-item
+			a.btn.btn-outline-light.btn-social.rounded-circle(href="#")
+				i.fa.fw.fa-google-plus
+		li.list-inline-item
+			a.btn.btn-outline-light.btn-social.rounded-circle(href="#")
+				i.fa.fw.fa-linkedin
+		li.list-inline-item
+			a.btn.btn-outline-light.btn-social.rounded-circle(href="#")
+				i.fa.fw.fa-dribbble
+
+mixin btn-social()
+	ul.list-inline.mb-0.social-button
+		li.list-inline-item
+			a(href="#")
+				i.fa.fw.fa-facebook
+		li.list-inline-item
+			a(href="#")
+				i.fa.fw.fa-twitter
+		li.list-inline-item
+			a(href="#")
+				i.fa.fw.fa-google-plus
+		li.list-inline-item
+			a(href="#")
+				i.fa.fw.fa-linkedin
+		li.list-inline-item
+			a(href="#")
+				i.fa.fw.fa-dribbble
+
+mixin btn-social-small()
+	ul.list-inline.mb-0
+		li.list-inline-item
+			a(href="")
+				.fa-stack 
+					i.fa.fa-circle.fa-stack-2x.text-primary
+					i.fa.fa-facebook.fa-stack-1x.fa-inverse
+		li.list-inline-item
+			a(href="")
+				.fa-stack
+					i.fa.fa-circle.fa-stack-2x.text-primary
+					i.fa.fa-twitter.fa-stack-1x.fa-inverse
+		li.list-inline-item
+			a(href="")
+				.fa-stack
+					i.fa.fa-circle.fa-stack-2x.text-primary
+					i.fa.fa-google-plus.fa-stack-1x.fa-inverse
+						
+mixin card-fa(icon, title, text)
+	.cart-item
+		i(class=icon)
+		h3=title
+		p.text-muted=text

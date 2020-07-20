@@ -1,0 +1,25 @@
+@import "common/variables";
+
+// Automatically injected Bower dependencies via wiredep (never manually edit this block)
+/*star bootstrap*/
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+/*styles*/
+/*common*/
+@import "common/extends";
+@import "common/fonts";
+@import "common/mixin";
+@import "common/global";
+
+/*components*/
+@import "components/buttons";
+@import "components/forms";
+
+/*plugin*/
+@import "plugin/slider";
+
+/*layouts*/
+@import "layouts/header";
+@import "layouts/footer";
+@import "layouts/homepage";
+@import "layouts/blog";

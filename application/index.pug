@@ -1,0 +1,195 @@
+include include/_head.pug
+include include/_mixin.pug
++navigantion()
+header.masthead.mb-0.mb-sm-5#home
+	.container.h-100
+		.row.h-100.no-gutters
+			.col-md-6.my-auto
+				.conten-left-header
+					label.font-MuseoSlab--light.lbl Creative design and development agency
+					h1.h1-big Bring values to our amazing project
+					span.d-block.spn We believe if we work with inovation it will be something incredible
+					a.btn.btn-primary.btn-header See what we do
+			.col-md-6.mx-auto
+				.img-header-right.pl-sm-3
+					img.img-fluid(src="dist/images/bg-header.png")
+main(role="main")
+	section#services.about
+		.container
+			.content-about.p-5
+				.row.h-100
+					.col-lg-6.my-auto
+						img.img-fluid.img-service(src="dist/images/about-images.png", alt="img-about")
+					.col-lg-6.my-auto
+						.content-item
+							.title-content.text-white
+								h1.mb-3 Hi-there!
+							p We are a passionate and solid team that has many creative ideas to explore. We have start this team since 2015 that focused on creative digital product. We always try to applicate our knowledge to bring inovations that useful for others. 
+	section#portfolio.wwd.mt-5
+		.container
+			.content-wwd
+				.content-item
+					.col-sm-8.col-12
+						.content-item
+							.title-content.text-black
+								h1.mb-3.font-MuseoSlab--medium What we do
+							p We always doing some research before create some creation, so that the result will appropriate with what will be need by people and also resolve the problem.
+		.container-fluid
+				.row.no-gutters
+					.col-md-6
+						.content-left
+							img.img-fluid.icon-content(src="dist/images/computer.svg", alt="computer-images")
+							.title-content-no-bg.text-black
+								h1.mb-3 Web development
+							.content-p
+								p Create all of web-based application such as Company Profile, Government Solutions, Ecommerce, Information System
+					.col-md-6
+						.img-web-dev.position-relative
+							.img-background.position-absolute
+								img.img-fluid.img-bgArtha(src="dist/images/bg-web-dev.svg", alt="images")
+							.img-hover.position-absolute
+								img.img-fluid(src="dist/images/pelayanan-terbaik.png", alt="images")
+							.img-top.position-absolute
+								img.img-fluid(src="dist/images/artha-bg.png", alt="images")
+	section#mobileDev.mobileDev
+		.container-fluid
+			.row.no-gutters
+				.col-md-6.order-md-2
+					.content-left.pl-sm-4.m-dev
+						img.img-fluid.icon-content(src="dist/images/mobile-icon.svg", alt="icon mobile")
+						.title-content-no-bg.text-black
+							h1.mb-3 Mobile development
+						.content-p
+							p We spesialized in android application system such as Event Application, Ecommerce, Information System
+				.col-md-6.order-md-1
+					.position-relative.mobileDevImg
+						.bg-images
+							img.img-fluid.pl-mobile-dev(src="dist/images/bc-grebek.png", alt="mobile images")
+						.bg-top-mbl.position-absolute
+							img.img-fluid.pl-mobile-dev(src="dist/images/mobile-grebek.png", alt="mobile images")
+	section#projectShots.project
+		.container-fluid
+			.content-item.text-center
+				.title-content
+					h1.mb-0 Project Shots
+				p “Good application is obvious, great application transparent.”
+			#sliderPoject.carousel.slide(data-ride='carousel')
+				ol.carousel-indicators
+					li.active(data-target='#sliderPoject', data-slide-to='0')
+					li(data-target='#sliderPoject', data-slide-to='1')
+					li(data-target='#sliderPoject', data-slide-to='2')
+				.carousel-inner.pb-5
+					.carousel-item.active
+						.row.h-100
+							.col-md-6.my-auto
+								.img-slider
+									img.img-fluid(src='dist/images/bimbel-arta.png', alt='Images Slide')
+							.col-md-6
+								.content-slide
+									.title-slide
+										h1.mb-0 Bimbel Artha Group
+									p Grebeg Suro Fest App adalah aplikasi terkait informasi event budaya nasional di Ponorogo. Terdapat fitur live video 360, list event, twitter feeds dan berita seputar event. Aplikasi ini adalah bentuk partisipasi masyarakat dalam melestarikan budaya nasional.
+									a.btn.btn-visitSite
+										| Visit Site
+										.img.d-block
+					.carousel-item
+						.row.h-100
+							.col-md-6.my-auto
+								.img-slider
+									img.img-fluid(src='dist/images/bimbel-arta.png', alt='Images Slide')
+							.col-md-6
+								.content-slide
+									.title-slide
+										h1.mb-0 Bimbel Artha Group
+									p Grebeg Suro Fest App adalah aplikasi terkait informasi event budaya nasional di Ponorogo. Terdapat fitur live video 360, list event, twitter feeds dan berita seputar event. Aplikasi ini adalah bentuk partisipasi masyarakat dalam melestarikan budaya nasional.
+									a.btn.btn-visitSite
+										| Visit Site
+										.img.d-block
+					.carousel-item
+						.row.h-100
+							.col-md-6.my-auto
+								.img-slider
+									img.img-fluid(src='dist/images/bimbel-arta.png', alt='Images Slide')
+							.col-md-6
+								.content-slide
+									.title-slide
+										h1.mb-0 Bimbel Artha Group
+									p Grebeg Suro Fest App adalah aplikasi terkait informasi event budaya nasional di Ponorogo. Terdapat fitur live video 360, list event, twitter feeds dan berita seputar event. Aplikasi ini adalah bentuk partisipasi masyarakat dalam melestarikan budaya nasional.
+									a.btn.btn-visitSite
+										| Visit Site
+										.img.d-block
+	section#team-inovativ.team-inovativ
+		.container
+			.content-item.text-center
+				.title-content
+					h1.mb-0 The Team
+				p Lorem Ipsum Dolor Sit amet
+			.row
+				.col-md-3.col-sm-6.col-6
+					.Member.h-100
+						.img-member
+							img.img-fluid(src="dist/images/triyandi.png", alt="member-img")
+						.ctn-img-team.text-left.bg-primary.p-3
+							label.mb-0(for="") Triyandi Rusdi S
+							span.d-block UI/X Designer 
+				.col-md-3.col-sm-6.col-6
+					.Member.h-100
+						.img-member
+							img.img-fluid(src="dist/images/andri.png", alt="member-img")
+						.ctn-img-team.text-left.bg-primary.p-3
+							label.mb-0(for="") Andri Ma'aruf A
+							span.d-block Back End Programmer
+				.col-md-3.col-sm-6.col-6
+					.Member.h-100
+						.img-member
+							img.img-fluid(src="dist/images/kamal.png", alt="member-img")
+						.ctn-img-team.text-left.bg-primary.p-3
+							label.mb-0(for="") Kamal Fadl-lu M M
+							span.d-block Android Programmer
+				.col-md-3.col-sm-6.col-6
+					.Member.h-100
+						.img-member
+							img.img-fluid(src="dist/images/aziz.png", alt="member-img")
+						.ctn-img-team.text-left.bg-primary.p-3
+							label.mb-0(for="") Aziz Mu'in
+							span.d-block Back-End Programmer
+	section#partner.partner
+		.container
+			.content-item.text-center
+				.title-content
+					h1.mb-0 Our Partners &amp; Clients
+				p We are happy to help our clients need and work together to reach our goals
+				.list-content-partner
+					//- goverment
+					.titlePartner.text-center
+						h6 Government
+					.row.justify-content-center
+						.col-lg-2.col-sm-3.col-4.item-partner.d-flex
+							img.img-fluid.imgPartner.mx-auto.d-block.my-auto(src="dist/images/kominfo.png", alt="img-goverment")
+						.col-lg-2.col-sm-3.col-4.item-partner.d-flex
+							img.img-fluid.imgPartner.mx-auto.d-block.my-auto(src="dist/images/dinas-pariwisata.png", alt="img-goverment")
+						.col-lg-2.col-sm-3.col-4.item-partner.d-flex
+							img.img-fluid.imgPartner.mx-auto.d-block.my-auto(src="dist/images/bkd.png", alt="img-goverment")
+						.col-lg-2.col-sm-3.col-4.item-partner.d-flex
+							img.img-fluid.imgPartner.mx-auto.d-block.my-auto(src="dist/images/bakesbangpol.png", alt="img-goverment")
+						.col-lg-2.col-sm-3.col-4.item-partner.d-flex
+							img.img-fluid.imgPartner.mx-auto.d-block.my-auto(src="dist/images/dinasPKP.png", alt="img-goverment")
+						.col-lg-2.col-sm-3.col-4.item-partner.d-flex
+							img.img-fluid.imgPartner.mx-auto.d-block.my-auto(src="dist/images/dinasDupcakel.png", alt="img-goverment")
+						.col-lg-2.col-sm-3.col-4.item-partner.d-flex
+							img.img-fluid.imgPartner.mx-auto.d-block.my-auto(src="dist/images/dinasPU.png", alt="img-goverment")
+						.col-lg-2.col-sm-3.col-4.item-partner.d-flex
+							img.img-fluid.imgPartner.mx-auto.d-block.my-auto(src="dist/images/dinasPPKAD.png", alt="img-goverment")
+					//- non goverment
+					.titlePartner.text-center
+						h6.mb-4 Non Goverment
+					.list-partner-item.NonGoverment
+						.row.justify-content-center
+							.col-lg-2.col-sm-4.col-4.item-partner.d-flex
+								img.img-fluid.imgPartner.mx-auto.d-block.my-auto(src="dist/images/cakBerok.png", alt="img-non-goverment")
+							.col-lg-2.col-sm-4.col-4.item-partner.d-flex
+								img.img-fluid.imgPartner.mx-auto.d-block.my-auto(src="dist/images/artha.png", alt="img-non-goverment")
+							.col-lg-2.col-sm-4.col-4.item-partner.d-flex
+								img.img-fluid.imgPartner.mx-auto.d-block.my-auto(src="dist/images/wallArt.png", alt="img-non-goverment")
+
+include include/_footer.pug

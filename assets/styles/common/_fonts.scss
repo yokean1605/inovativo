@@ -1,0 +1,27 @@
+@font-face {
+	font-family: 'museoSlab';
+	src: url('./fonts/Museo_Slab_300.otf');
+	font-weight: 300;
+}
+
+@font-face {
+	font-family: 'museoSlab_medium';
+	src: url('./fonts/Museo_Slab_500.otf');
+	font-weight: 500;
+}
+
+.font-MuseoSlab--light {
+  font-family: 'museoSlab';
+}
+
+.font-MuseoSlab--medium {
+	font-family: 'museoSlab_medium';
+	font-weight: 500;
+}
+
+
+
+/*font source sans pro*/
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i');
+@import url('https://fonts.googleapis.com/css?family=Montserrat+Alternates:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
+/*font awesome*/

@@ -1,0 +1,60 @@
+.footer {
+	background: url(./images/footer.png) no-repeat center center; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	min-height: 507px;
+	@media screen and(max-width: 575px) {
+		min-height: 250px;
+		background: url(./images/bg-mobileFooter.png) no-repeat center center; 
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+		padding: 7rem 0;
+	}
+}
+
+.content-footer {
+	h1 {
+		font-family: $MontserratA;
+		font-size: 48px;
+		font-weight: bold;
+		font-style: normal;
+		font-stretch: normal;
+		line-height: normal;
+		letter-spacing: normal;
+		@media screen and(min-width: 576px) {
+			margin-bottom: 56px;
+		}
+		@media screen and(max-width: 576px) {
+			font-size: 30px;
+			margin-bottom: 34px;
+		}
+
+	}
+	label.cv {
+		font-size: 16px;
+		font-weight: 600;
+		font-style: normal;
+		font-stretch: normal;
+		line-height: normal;
+		letter-spacing: 0.9px;
+		color: #2f3034;
+		@media screen and(min-width: 576px) {
+			margin-bottom: 32px;
+		}
+		@media screen and(max-width: 576px) {
+			margin-bottom: 30px;
+		}
+	}
+}
+.icon-footer {
+	max-height: 55px;
+}
+
+.copyright {
+	background-color: #1a252f;
+}
+

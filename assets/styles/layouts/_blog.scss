@@ -1,0 +1,137 @@
+.header-blog {
+	border-radius: 25px;
+	background-image: linear-gradient(260deg, #9353cb, #5f6ed4);
+	min-height: 180px;
+	padding: 35px 62px;
+	margin-bottom: 87px;
+	@media screen and(max-width: 575px) {
+		border-radius: 20px;
+		padding: 25px;
+		text-align: center;
+	}
+	.content-header-blog {
+		h1.title-header-blog {
+			font-size: 36px;
+			font-weight: bold;
+			font-style: normal;
+			font-stretch: normal;
+			line-height: 1.67;
+			letter-spacing: normal;
+			color: white;
+			font-family: $MontserratA;
+			@media screen and(max-width: 575px) {
+				font-size: 24px;
+			}
+		}
+		>p {
+			font-size: 14px;
+			font-weight: normal;
+			font-style: normal;
+			font-stretch: normal;
+			line-height: 1.86;
+			letter-spacing: 0.5px;
+			color: #d3dfee;
+		}
+	}
+	.img-bg-header {
+		top: 0;
+		right: 0;
+	}
+	.img-bg-pandan {
+		bottom: 0;
+		right: 0;
+		max-width: 25%;
+	}
+}
+.blog-inovatif {
+	margin-top: 100px;
+}
+
+.title-section-post {
+	margin-bottom: 40px;
+	h1 {
+		font-family: $MontserratA;
+		font-size: 30px;
+		font-weight: bold;
+		font-style: normal;
+		font-stretch: normal;
+		line-height: normal;
+		letter-spacing: normal;
+	}
+}
+/*.populer-post*/
+.populer-post {
+	margin-bottom: 105px;
+	.content-post {
+		.title-post {
+			margin-bottom: 30px;
+			h1 {
+				font-size: 24px;
+				font-weight: bold;
+				font-style: normal;
+				font-stretch: normal;
+				line-height: normal;
+				letter-spacing: normal;
+				color: #000000;
+			}
+		}
+		.img-post {
+			max-height: 357px;
+			overflow: hidden;
+			border-radius: 4px;
+		}
+		.updated-time {
+			font-size: 14px;
+			font-weight: normal;
+			font-style: normal;
+			font-stretch: normal;
+			line-height: normal;
+			letter-spacing: normal;
+			color: #6c6e74;
+			margin: 24px 0;
+			margin-bottom: 18px;
+			display: block;
+		}
+		p {
+			font-size: 14px;
+			font-weight: normal;
+			font-style: normal;
+			font-stretch: normal;
+			line-height: 24px;
+			letter-spacing: 0px;
+			color: #47484a;
+		}
+	}
+}
+.content-post.cp-right {
+	margin-bottom: 30px;
+	.title-post{
+		h1 {
+			font-size: 16px;
+			font-weight: 600;
+			font-style: normal;
+			font-stretch: normal;
+			line-height: 24px;
+			letter-spacing: normal;
+			color: #000000;
+		}
+	}
+	.img-post {
+		max-height: 170px;
+		overflow: hidden;
+			border-radius: 4px;
+	}
+	.updated-time {
+		margin-top: 25px;
+		margin-bottom: 10px;
+		display: block;
+	}
+}
+
+section.other-post {
+	margin-bottom: 335px;
+	@media screen and(max-width: 575px) {
+		margin-bottom: 50px;
+	}
+}
+/*other post*/
